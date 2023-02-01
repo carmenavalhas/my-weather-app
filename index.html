@@ -10,6 +10,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
 
     <title>My Weather App</title>
@@ -19,10 +20,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>Lisbon</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Friday 05:00</li>
-              <li>Cloudy</li>
+              <li id="sky-description"></li>
             </ul>
             <div class="row">
               <div class="col-6">
@@ -31,7 +32,7 @@
                     src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
                     alt="Cloudy"
                   />
-                  <strong id="temperature">4</strong
+                  <strong id="temperature"></strong
                   ><span class="units"
                     >°C⎪ <a class="fahrenheit" href="">°F</a></span
                   >
@@ -40,9 +41,8 @@
               </div>
               <div class="col-6">
                 <ul>
-                  <li>Precipitation: 11%</li>
-                  <li>Humidity: 53%</li>
-                  <li>Wind: 10km/h</li>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span>km/h</li>
                 </ul>
               </div>
             </div>
