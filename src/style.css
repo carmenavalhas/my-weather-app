@@ -54,7 +54,7 @@ li:first-letter {
 }
 
 .weather-temperature strong {
-color: rgb(35, 5, 35);
+color: rgb(33, 33, 33);
 font-size: 64px;
 line-height: 1;
 font-weight: 400;
@@ -65,7 +65,14 @@ font-weight: 400;
   font-size: 16px;
 }
 
-.fahrenheit {
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
   text-decoration: none;
 }
 
