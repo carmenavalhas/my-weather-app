@@ -3,12 +3,32 @@ body {
 }
 
 h1 {
-  color: #878787;
+  color: blueviolet;
   display: block;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+small {
+  color: blueviolet;
+  font-size: 10px;
+
+}
+
+small a {
+  text-decoration: none;
+  color: #878787;
+}
+
+small a:hover {
+  background: rgba(138, 43, 226, 0.2);
+  padding: 2px;
 }
 
 ul {
@@ -39,8 +59,9 @@ li:first-letter {
 .weather-app {
  
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: 1px solid rgba(138, 43, 226, 0.5);;
   border-radius: 10px;
+  background: rgba(138, 43, 226, 0.03);
 }
 
 .overview {
@@ -63,6 +84,7 @@ font-weight: 400;
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
+  
 }
 
 
@@ -70,9 +92,40 @@ font-weight: 400;
   color: rgb(33, 33, 33);
   cursor: default;
   text-decoration: none;
+  
+}
+
+.weather-temperature .units a {
+color: #878787;
+
 }
 
 .weather-temperature .active:hover {
   text-decoration: none;
 }
 
+#search-button {
+  background: blueviolet;
+  border: none;
+}
+
+#temperature {
+  color: blueviolet;
+}
+
+#fahrenheit-link {
+color: rgba(138, 43, 226, 0.7);
+text-decoration: none;
+}
+
+#celsius-link {
+color: blueviolet;
+text-decoration: none;
+}
+
+
+input:placeholder-shown {
+  border-color: rgba(138, 43, 226, 0.3);
+  background: rgba(138, 43, 226, 0.09);
+  font-style: italic;
+}
