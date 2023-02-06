@@ -104,6 +104,25 @@ color: #878787;
   text-decoration: none;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+.weather-forecast-date, 
+.weather-forecast-temperature-min {
+  color: blueviolet;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.weather-forecast-temperature-max {
+  color: blueviolet;
+  font-size: 14px;
+}
+
+
 #search-button {
   background: blueviolet;
   border: none;
