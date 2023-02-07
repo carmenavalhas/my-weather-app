@@ -56,8 +56,11 @@ li:first-letter {
   margin: 30px auto;
 }
 
+.units {
+  color: blueviolet;
+}
+
 .weather-app {
- 
   padding: 20px;
   border: 1px solid rgba(138, 43, 226, 0.5);;
   border-radius: 10px;
@@ -81,27 +84,12 @@ line-height: 1;
 font-weight: 400;
 }
 
-.weather-temperature .units {
-  position: relative;
-  font-size: 16px;
-  
-}
-
 
 .weather-temperature .active {
   color: rgb(33, 33, 33);
   cursor: default;
   text-decoration: none;
   
-}
-
-.weather-temperature .units a {
-color: #878787;
-
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
 }
 
 .weather-forecast {
