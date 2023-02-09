@@ -45,7 +45,7 @@ let forecastHTML = `<div class="row">`;
            <img
               src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png"
               alt="weather icon"alt=""
-            width="55"
+            width="60"
           />
           <div class="weather-forecast-temperature">
             <span class="weather-forecast-temperature-max"> <strong>
@@ -66,7 +66,6 @@ forecastElement.innerHTML = forecastHTML;
  }
 
  function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "442601ab0f43da939c1bto9077411c63";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
@@ -78,6 +77,7 @@ let temperatureElement = document.querySelector("#temperature");
 let cityElement = document.querySelector("#city");
 let descriptionElement = document.querySelector("#sky-description");
 let humidityElement = document.querySelector("#humidity");
+let realfeelElement = document.querySelector("#real-feel");
 let windElement = document.querySelector("#wind");
 let dateElement = document.querySelector("#date");
 let iconElement = document.querySelector("#icon");
@@ -90,6 +90,7 @@ temperatureElement.innerHTML = Math.round(celsiusTemperature);
 cityElement.innerHTML = response.data.city;
 descriptionElement.innerHTML = response.data.condition.description;
 humidityElement.innerHTML = response.data.temperature.humidity;
+realfeelElement.innerHTML = Math.round(response.data.temperature.feels_like);
 windElement.innerHTML = Math.round(response.data.wind.speed);
 dateElement.innerHTML = formatDate(response.data.time * 1000);
 iconElement.setAttribute(
