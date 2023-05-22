@@ -1,12 +1,12 @@
 body {
   font-family: 'Jost', sans-serif;
-  background: #FADEDC;
+  background-color: #EBD1A0;
 }
 
 
 h1 {
   font-family: 'Jost', sans-serif;
-  color:#E98A84;
+  color:#D2A658;
   text-transform: uppercase;
   display: block;
   font-size: 44px;
@@ -16,24 +16,24 @@ h1 {
 }
 
 footer {
-  margin-top: 10px;
+  margin-top: 22px;
   text-align: center;
 }
 
 small {
-  color: #E98A84;
+  color: #D2A658;
   font-size: 14px;
 
 }
 
 small a {
   text-decoration: none;
-  color: #E98A84;
+  color: #D2A658;
   transition: all 200ms ease-in-out;
 }
 
 small a:hover {
-  background: #E98A84;
+  background: #D2A658;
   color: #Ffffff;
   padding: 0 10px;
   border-radius: 5px;
@@ -48,7 +48,7 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: #E98A84;  
+  color: #D2A658;  
   font-size: 18px;
   font-weight: 100;
   line-height: 19px;
@@ -70,14 +70,16 @@ input {
 }
 
 .units {
-  color: #E98A84;
+  color: #D2A658;
   font-size: 20px;
 }
 
 .weather-app {
   padding: 35px;
   border-radius: 30px;
-  background: linear-gradient(3deg, rgb(233, 138, 132) 0%, rgb(255, 255, 255) 100%);
+  background: linear-gradient(7deg, rgb(210,
+    166,
+    88) 0%, rgb(255, 255, 255) 100%);
   box-shadow: 9px 10px 18px rgba(0, 0, 0, 0.2);
 }
 
@@ -114,7 +116,9 @@ font-weight: 400;
 
 
 #search-button {
-  background: #E98A84;
+  background: #D2A658;
+  letter-spacing: 1px;
+  font-size: 14px;
   text-align: center;
   height: 40px;
   color: #ffffff;
@@ -125,14 +129,14 @@ font-weight: 400;
 
 
 #search-button:hover {
-  background: rgba(233, 138, 132, 0.5);
+  background: rgba(210, 166, 88, 0.5);
   color: #Ffffff;
   padding: 0 10px;
   transition: all 200ms ease-in-out;
 }
 
 #temperature {
-  color: #E98A84;
+  color: #D2A658;
 }
 
 #sky-description  {
@@ -145,7 +149,10 @@ font-weight: 400;
   color: #ffffff;
   border-radius: 20px;
   height: 40px;
-  background: rgba(233, 138, 132, 0.4);
+  background: rgba(210,
+    166,
+    88,
+    0.5);
 }
 
 .the-real-feel {
@@ -154,7 +161,10 @@ font-weight: 400;
 
 
 input:placeholder-shown {
-  border: 2px solid rgba(233, 138, 132, 0.7);
+  border: 2px solid rgba(210,
+    166,
+    88,
+    0.9);
   font-style: italic;
   font-size: 15px;
   border-radius: 20px;
@@ -163,7 +173,7 @@ input:placeholder-shown {
 
 .line {
   border: 2px solid #ffff;
-  opacity: 0.2;
+  opacity: 0.3;
   border-radius: 5px;
   margin-bottom: 30px;
 }
