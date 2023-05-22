@@ -60,7 +60,6 @@ let forecastHTML = `<div class="row">`;
  }
 });
 
-
 forecastHTML = forecastHTML + `</div>`;
 forecastElement.innerHTML = forecastHTML;
  }
@@ -119,5 +118,29 @@ function handleSubmit(event) {
 
   let form = document.querySelector("#search-form");
   form.addEventListener("submit", handleSubmit);
-search("Paris");
+
+
+function showPosition(position) {
+  console.log(position);
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let apiKey = "1c0f6e49a911db65307b85186bd4t6oe";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function getCurrentPosition(event) {
+  event.preventDefault();
+  let current = document.querySelector("#button-current-location").value;
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+let currentLocation = document.querySelector("#button-current-location");
+currentLocation.addEventListener("click", getCurrentPosition);
+
+let celsiusTemperature = null;
+let feelsLikeTemperature = null;
+let windSpeed = null;
+
+  search("Lisbon");
 

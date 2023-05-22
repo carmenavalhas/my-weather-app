@@ -135,6 +135,25 @@ font-weight: 400;
   transition: all 200ms ease-in-out;
 }
 
+#button-current-location {
+  background: #D2A658;
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-align: center;
+  height: 40px;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 9px 10px 18px rgba(0, 0, 0, 0.2);
+}
+
+#button-current-location:hover {
+  background: rgba(210, 166, 88, 0.5);
+  color: #Ffffff;
+  padding: 0 10px;
+  transition: all 200ms ease-in-out;
+}
+
 #temperature {
   color: #D2A658;
 }
