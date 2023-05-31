@@ -9,7 +9,7 @@ h1 {
   color:#D2A658;
   text-transform: uppercase;
   display: block;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 100;
   line-height: 42px;
   margin-top: 35px;
@@ -118,7 +118,7 @@ font-weight: 400;
 #search-button {
   background: #D2A658;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
   height: 40px;
   color: #ffffff;
@@ -136,17 +136,14 @@ font-weight: 400;
 }
 
 #button-current-location {
-  letter-spacing: 1px;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
-  height: 40px;
   color: #D2A658;
   border: none;
 }
 
 #button-current-location:hover {
   color: rgba(210, 166, 88, 0.5);
-  padding: 0 10px;
   transition: all 200ms ease-in-out;
 }
 
@@ -155,9 +152,9 @@ font-weight: 400;
 }
 
 #sky-description  {
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 15px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #city-input {
@@ -166,7 +163,7 @@ font-weight: 400;
   background: rgba(210,
     166,
     88,
-    0.5);
+    0.2);
 }
 
 .the-real-feel {
@@ -175,10 +172,10 @@ font-weight: 400;
 
 
 input:placeholder-shown {
-  border: 2px solid rgba(210,
+  border: 1.5px solid rgba(210,
     166,
     88,
-    0.9);
+    0.7);
   font-style: italic;
   font-size: 15px;
   border-radius: 20px;
