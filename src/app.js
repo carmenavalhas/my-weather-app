@@ -45,7 +45,7 @@ let forecastHTML = `<div class="row">`;
            <img
               src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png"
               alt="weather icon"alt=""
-            width="60"
+            width="40"
           />
           <div class="weather-forecast-temperature">
             <span class="weather-forecast-temperature-max"> <strong>

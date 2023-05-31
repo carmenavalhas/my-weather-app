@@ -34,16 +34,16 @@
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-7">
+              <div class="col-6">
                 <input
                   type="search"
-                  placeholder="Type a city here..."
+                  placeholder="Type a city..."
                   class="form-control"
                   id="city-input"
                   autocomplete="off"
                 />
               </div>
-              <div class="col-3">
+              <div class="col-4">
                 <input
                   type="submit"
                   value="Search"
@@ -64,7 +64,7 @@
             </div>
           </form>
           <div class="overview">
-            <div class="col-9">
+            <div class="col-8">
               <ul>
                 <li>
                   <i class="fa-regular fa-clock"></i> Last updated:
@@ -104,12 +104,14 @@
           </div>
           <ul>
             <li class="the-real-feel">
-              <i class="fa-regular fa-face-grin-beam-sweat"></i> Real feel:
+              Real feel:
               <span id="real-feel"></span>º
             </li>
           </ul>
           <hr class="line" />
-          <div class="weather-forecast" id="forecast"></div>
+          <div class="icons-row d-flex justify-content-center">
+            <div class="weather-forecast" id="forecast"></div>
+          </div>
         </div>
         <footer>
           <small>
